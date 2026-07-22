@@ -31,7 +31,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          role-to-assume: arn:aws:iam::886058822788:role/GitHubOIDCDeployRole
           aws-region: ap-south-1
 
       - name: Install AWS CDK
